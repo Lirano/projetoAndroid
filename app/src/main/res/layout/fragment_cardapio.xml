@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".FragCardapio">
+
+    <ListView
+        android:id="@+id/listaCard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        ></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btDados"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DADOS"
+            android:background="@android:color/holo_orange_dark"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:onClick="tapDados"/>
+
+        <Button
+            android:id="@+id/btPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PEDIDO"
+            android:background="@android:color/holo_orange_dark"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:onClick="tapPedido"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

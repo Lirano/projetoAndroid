@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag_pedido"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clique no produto na lista para removê-lo."
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:id="@+id/listPedido"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/lbTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        />
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinheiro"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:drawableTint="@android:color/white"
+            android:buttonTint="@android:color/white"
+            />
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cartão"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:drawableTint="@android:color/white"
+            android:buttonTint="@android:color/white"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:hint="Observações do pedido. Ex: 01x Hamburguer 01 sem alface."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btCardapioPed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CARDÁPIO"
+            android:background="@android:color/holo_orange_dark"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:onClick="tapCardapioPed"/>
+
+        <Button
+            android:id="@+id/btFinalizar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FINALIZAR"
+            android:background="@android:color/holo_orange_dark"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:onClick="tapFinalizar"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

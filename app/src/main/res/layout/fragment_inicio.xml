@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context=".fragInicio">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <ImageView
+        android:id="@+id/logo_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite seu nome:"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite seu endereço:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/txtRua"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        android:hint="Rua"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtNumero"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="@android:color/white"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="N°"/>
+
+        <EditText
+            android:id="@+id/txtBairro"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:hint="Bairro"
+            android:background="@android:color/white"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtCidade"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        android:hint="Cidade"
+        />
+
+    <Button
+        android:id="@+id/btAcessar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/black"
+        android:text="Acessar"
+        android:textStyle="bold"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="tapAcessar"
+        android:textSize="17dp"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>
